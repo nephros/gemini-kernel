@@ -1,0 +1,7 @@
+mkdir KERNEL_OUT
+cp config KERNEL_OUT/.config
+pushd KERNEL_OUT
+make O=. -C ../kernel ARCH=arm64 menuconfig
+make O=. -C ../kernel ARCH=arm64  CROSS_COMPILE=../gcc-bin/aarch64-linux-android-4.9/bin/aarch64-linux-android- -j10
+popd
+mkbootimg --cmdline 'bootopt=64S3,32N2,64N2' --kernel KERNEL_OUT/arch/arm64/boot/Image.gz-dtb --ramdisk sailfishos_boot.img-ramdisk.gz --base 0x00000000 --pagesize 2048 --kernel_offset 0x40080000 --ramdisk_offset 0x45000000 --second_offset 0x40f00000 --tags_offset 0x44000000 --board '' -o sailfishos_boot.img
