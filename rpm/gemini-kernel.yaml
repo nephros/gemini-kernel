@@ -5,3 +5,5 @@ Group: System
 License: GPLv2
 Builder: none
 Configure: none
+Sources:
+  - '%{name}.tar.gz'

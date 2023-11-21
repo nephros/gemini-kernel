@@ -13,12 +13,15 @@ Version:    1.0
 Release:    1
 Group:      System
 License:    GPLv2
+Source0:    %{name}.tar.gz
 Source100:  gemini-kernel.yaml
 
 %description
 %{summary}.
 
 %prep
+%setup -q -n %{name}-%{version}
+
 # >> setup
 # << setup
 
