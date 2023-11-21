@@ -1,0 +1,7 @@
+Name: gemini-kernel
+Summary: Kernel build package
+Version: 1.0
+Group: System
+License: GPLv2
+Builder: none
+Configure: none
