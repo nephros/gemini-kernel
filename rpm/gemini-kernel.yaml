@@ -5,7 +5,7 @@ Group: System
 License: GPLv2
 Builder: none
 Configure: none
-BuildRRequires: opt-gcc9
+BuildRequires: opt-gcc9
 # py2 or migrated tools/dct stuff...
 BuildRRequires: python < 3
 Sources:
