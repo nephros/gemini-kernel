@@ -7,6 +7,6 @@ Builder: none
 Configure: none
 BuildRequires: opt-gcc9
 # py2 or migrated tools/dct stuff...
-BuildRRequires: python < 3
+BuildRequires: python < 3
 Sources:
   - '%{name}.tar.gz'
