@@ -5,8 +5,9 @@ Group: System
 License: GPLv2
 Builder: none
 Configure: none
-BuildRequires: opt-gcc9
-# py2 or migrated tools/dct stuff...
-BuildRequires: python < 3
 Sources:
   - '%{name}.tar.gz'
+PkgBR:
+  - opt-gcc9
+  # py2 or migrated tools/dct stuff...
+  - python < 3

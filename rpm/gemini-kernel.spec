@@ -15,6 +15,8 @@ Group:      System
 License:    GPLv2
 Source0:    %{name}.tar.gz
 Source100:  gemini-kernel.yaml
+BuildRequires:  opt-gcc9
+BuildRequires:  python < 3
 
 %description
 %{summary}.
